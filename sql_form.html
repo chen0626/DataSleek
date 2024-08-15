@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SQL Injection Demo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form action="insecure_sql.php" method="post">
+        <label for="username">Username (Insecure):</label>
+        <input type="text" id="username" name="username">
+        <button type="submit">Submit</button>
+    </form>
+    
+    <form action="secure_sql.php" method="post">
+        <label for="username">Username (Secure):</label>
+        <input type="text" id="username" name="username">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

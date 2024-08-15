@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DataSleek</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DataSleek | your data analysis app</h1>
+
+        <h2>Register</h2>
+        <form method="post" action="auth.php">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <label for="role">Role:</label>
+            <select id="role" name="role">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select><br>
+            <button type="submit" name="register">Register</button>
+        </form>
+
+        <h2>Login</h2>
+        <form method="post" action="auth.php">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit" name="login">Login</button>
+        </form>
+
+        <h2>Add Data</h2>
+        <form method="post" action="data.php">
+            <label for="data_point">Data Point:</label>
+            <input type="text" id="data_point" name="data_point" required><br>
+            <button type="submit" name="add_data">Add Data</button>
+        </form>
+
+        <h2>View Data</h2>
+        <div id="data">
+            <!-- Data will be displayed here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Hashing Demo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Insecure Password Storage</h2>
+        <form action="insecure_hash.php" method="post">
+            <input type="password" name="password" placeholder="Enter password">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Secure Password Storage</h2>
+        <form action="secure_hash.php" method="post">
+            <input type="password" name="password" placeholder="Enter password">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
